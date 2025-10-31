@@ -1,0 +1,51 @@
+/* O display: flex serve para alinhar os elementos de forma flexível e responsiva. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #1db954;
+}
+
+#lista-de-musicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* O card representa visualmente uma música, parecido com o estilo do Spotify */
+.musica-card {
+  background-color: #181818;
+  border-radius: 12px;
+  margin: 10px;
+  width: 180px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.musica-card:hover {
+  transform: scale(1.05);
+}
+
+.musica-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.musica-card h3 {
+  margin: 10px 0 5px 0;
+}
+
+.musica-card p {
+  color: #aaa;
+  font-size: 0.9em;
+}
